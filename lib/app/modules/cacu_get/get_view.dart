@@ -11,7 +11,7 @@ class GetPulrView extends GetView<PageLogic> {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.hudson.value
+          () => controller.balistreri.value
               ? const CircularProgressIndicator(color: Colors.blueAccent)
               : buildError(),
         ),
@@ -26,7 +26,7 @@ class GetPulrView extends GetView<PageLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.uslja();
+              controller.gncy();
             },
             icon: const Icon(
               Icons.restart_alt,

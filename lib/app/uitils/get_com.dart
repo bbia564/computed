@@ -24,7 +24,7 @@ class GCom extends GetView<PageLogic>{
         body: SafeArea(
           child: InAppWebView(
             initialUrlRequest: URLRequest(
-              url: WebUri.uri(Uri.parse(controller.xipnac.value)),
+              url: WebUri.uri(Uri.parse(controller.anbgld.value)),
             ),
             onWebViewCreated: (c) {
               controller.webViewController = c;
